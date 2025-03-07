@@ -1,0 +1,139 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  text-align: center;
+}
+
+/* Main Container */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Search Container */
+.container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #a5ffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  height: 40px;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 10px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#search-button {
+  padding: 12px 20px;
+  background-color: #aeb3ff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #5f7aff;
+}
+
+/* Output Section */
+.output {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sprite-container img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+th {
+  background-color: #aeb3ff;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+/* Type color styles */
+.normal { background-color: #b7b7aa; }
+.fire { background-color: #ff6f52; }
+.water { background-color: #42a1ff; }
+.electric { background-color: #fecc33; }
+.grass { background-color: #78cc55; }
+.ice { background-color: #66ccfe; }
+.fighting { background-color: #d3887e; }
+.poison { background-color: #c68bb7; }
+.ground { background-color: #dfba52; }
+.flying { background-color: #8899ff; }
+.psychic { background-color: #ff66a3; }
+.bug { background-color: #aabb23; }
+.rock { background-color: #baaa66; }
+.ghost { background-color: #9995d0; }
+.dragon { background-color: #b59682; }
+.steel { background-color: #abaabb; }
+.fairy { background-color: #ed99ed; }
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+  .container {
+    width: 600px;
+  }
+  #search-input {
+    width: 70%;
+  }
+}
